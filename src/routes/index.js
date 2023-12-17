@@ -8,11 +8,11 @@ import Profile from '~/pages/Profile';
 import Search from '~/pages/Search';
 
 const publicRoutes = [
-    { path: '/', componen: Home },
-    { path: '/following', componen: Following },
-    { path: '/profile', componen: Profile },
-    { path: '/search', componen: Search, layout: null },
-    { path: '/upload', componen: Upload, layout: HeaderOnly },
+    { path: '/', component: Home },
+    { path: '/following', component: Following },
+    { path: '/:nickname', component: Profile },
+    { path: '/search', component: Search, layout: null },
+    { path: '/upload', component: Upload, layout: HeaderOnly },
 ];
 
 const privateRoutes = [];
